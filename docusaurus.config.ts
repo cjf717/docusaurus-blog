@@ -15,12 +15,12 @@ const config: Config = {
   url: 'https://cjf717.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docusaurus-demo/',
+  baseUrl: '/docusaurus-blog/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'jeff', // Usually your GitHub org/user name.
-  projectName: 'docusaurus-demo', // Usually your repo name.
+  projectName: 'docusaurus-blog', // Usually your repo name.
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
@@ -80,7 +80,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: '创梦天空',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -90,12 +90,11 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: '文章',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        {to: '/blog', label: '文章', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/cjf717/docusaurus-blog',
           label: 'GitHub',
           position: 'right',
         },
