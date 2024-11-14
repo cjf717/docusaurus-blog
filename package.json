@@ -1,6 +1,6 @@
 {
-  "name": "docusaurus-website",
-  "version": "0.0.0",
+  "name": "docusaurus-demo",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
