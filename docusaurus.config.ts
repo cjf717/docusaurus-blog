@@ -40,6 +40,9 @@ const config: Config = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          // id: 'product', // omitted => default instance
+          // path: 'product',
+          // routeBasePath: 'product',
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -71,6 +74,19 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'post',
+        path: 'post',
+        routeBasePath: 'post',
+        sidebarPath: './sidebars.ts',
+        // ... other options
+      },
+    ],
+  ],
+
   markdown: {
     mermaid: true,
   },
@@ -90,9 +106,18 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
+          label: '入门',
+        },
+        {
+          type: 'doc',
+          docId: 'main',
+          sidebarId: 'postSidebar',
+          docsPluginId: 'post',
+          position: 'left',
           label: '文章',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        // {to: '/post', label: 'Post', position: 'left'},
         {
           href: 'https://github.com/cjf717/docusaurus-blog',
           label: 'GitHub',
