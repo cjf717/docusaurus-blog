@@ -16,13 +16,13 @@ const config: Config = {
   url: 'https://github.com/cjf717/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docusaurus-blog/',
+  baseUrl: '/docusaurus-demo/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'cjf717', // Usually your GitHub org/user name.
-  projectName: 'docusaurus-blog', // Usually your repo name.
-  trailingSlash: false,
+  organizationName: 'cjf717', // Usually your GitHub org/user name.拥有部署存储库的 GitHub 用户或组织。
+  projectName: 'docusaurus-demo', // Usually your repo name.部署存储库的名称。
+  trailingSlash: false, //添加尾部斜杠
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
